@@ -2,33 +2,18 @@ class Main {
 
     public static void main(String[] args) throws Exception {
         Scanner src = new Scanner(System.in);
+        int num1 = 1;
+        int num2 = 1;
         int num = src.nextInt();
-        if(num==0){
-            System.out.println("Ваше число по системе Фабоначчи: " + 1);
+        int numOfFibonachi;
+        int i = 0;
+        while ( i <= num) {
+            numOfFibonachi = num1 + num2;
+            num1 = num2;
+            num2 = numOfFibonachi;
+            if(i == num){
+                System.out.println(numOfFibonachi);
+            }
+            i++;
         }
-        if(num==1){
-            System.out.println("Ваше число по системе Фабоначчи: " + 1);
-        }
-        if(num==2){
-            System.out.println("Ваше число по системе Фабоначчи: " + 2);
-        }
-        if(num==3){
-            System.out.println("Ваше число по системе Фабоначчи: " + 3);
-        }
-        if(num==4){
-            System.out.println("Ваше число по системе Фабоначчи: " + 5);
-        }
-        if(num==5){
-            System.out.println("Ваше число по системе Фабоначчи: " + 8);
-        }
-        if(num==6){
-            System.out.println("Ваше число по системе Фабоначчи: " + 13);
-        }
-        if(num==7){
-            System.out.println("Ваше число по системе Фабоначчи: " + 21);
-        }
-        if(num==8){
-            System.out.println("Ваше число по системе Фабоначчи: " + 35);
-        }
-    }
-}
+        
